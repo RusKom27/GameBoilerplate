@@ -54,6 +54,15 @@ config/name="GameBoilerplate"
 run/main_scene="res://Root.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=682
+window/size/height=400
+window/per_pixel_transparency/allowed=true
+window/per_pixel_transparency/enabled=true
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
+
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
