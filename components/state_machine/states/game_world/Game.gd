@@ -1,7 +1,10 @@
 extends GameWorldState
 
+onready var game_ui: Control;
+
 func enter(msg := {}):
-	owner.ui_root.get_node("GameUI").visible = true
+	game_ui = owner.ui_root.get_node("GameUI")
+	game_ui.visible = true
 
 func exit():
-	owner.ui_root.get_node("GameUI").visible = false
+	game_ui.visible = false

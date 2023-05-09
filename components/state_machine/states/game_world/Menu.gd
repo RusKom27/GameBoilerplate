@@ -1,10 +1,11 @@
 extends GameWorldState
 
-
+var menu_ui: Control;
 
 func enter(msg := {}):
-	owner.ui_root.get_node("MenuUI").visible = true
+	menu_ui = owner.ui_root.get_node("MenuUI")
+	menu_ui.visible = true
 
 func exit():
-	owner.ui_root.get_node("MenuUI").visible = false
+	menu_ui.visible = false
 	
